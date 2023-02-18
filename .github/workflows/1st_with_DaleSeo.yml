@@ -6,3 +6,12 @@ jobs :
     steps :
       - run : echo 'Hello Git Actions!'
       
+  pwd-ls :
+    name : PWD & LS
+    runs-on : ubuntu-latest
+    steps :
+      - name : print working directory
+        run : pwd
+      - name : list files
+        run : ls -al
+      
