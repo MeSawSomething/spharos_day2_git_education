@@ -1,0 +1,8 @@
+name : Practice Git Action with DaleSeo #1
+on : push
+jobs : 
+  echo : 
+    runs-on : ubuntu-latest
+    steps :
+      - run : echo 'Hello Git Actions!'
+      
