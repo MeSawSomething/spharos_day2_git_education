@@ -7,4 +7,4 @@ jobs:
       - run: ls -al
       - uses: actions/checkout@v3
       - run : ls al #작업디렉토리의 파일 나열
-      - uses: cat .github/workflows/checkout.yml #워크플로우 YAML 내용 출력
+      - run: cat .github/workflows/checkout.yml #워크플로우 YAML 내용 출력
