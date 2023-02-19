@@ -8,5 +8,5 @@ jobs:
         with : #다른 경로에 code 내려받기 
           fetch-depth : 3 #과거 변경이력 다운받기 default 1, 0=모든 기록 
           #path: our-source #다른 경로에 코드 내려받기
-      - run : git log
+      - run : git log --pretty=oneline
       #- run: cat .github/workflows/checkout.yml #워크플로우 YAML 내용 출력
