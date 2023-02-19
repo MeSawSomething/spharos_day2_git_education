@@ -4,10 +4,9 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
-      #- run: ls -al
       - uses: actions/checkout@v3
         with : #다른 경로에 code 내려받기 
-          path: our-source
-      - run : ls -al #작업디렉토리의 파일 나열
-      - run : ls -al our-source
+          fetch-depth : 3 #과거 변경이력 다운받기 default 1, 0=모든 기록 
+          #path: our-source #다른 경로에 코드 내려받기
+      - run : git log
       #- run: cat .github/workflows/checkout.yml #워크플로우 YAML 내용 출력
