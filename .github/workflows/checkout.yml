@@ -1,8 +1,8 @@
-name : Our Workflow - check out
-on : push
-jobs :
+name: Our Workflow
+on: push
+jobs:
   checkout:
-    runs-on : ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - run : ls -al
-      - uses : actions/checkout@3
+      - run: ls -al
+      - uses: actions/checkout@v3
