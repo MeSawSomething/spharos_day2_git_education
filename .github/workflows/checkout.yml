@@ -6,5 +6,8 @@ jobs:
     steps:
       - run: ls -al
       - uses: actions/checkout@v3
+        with : #다른 경로에 code 내려받기 
+          path: our-source
       - run : ls -al #작업디렉토리의 파일 나열
-      - run: cat .github/workflows/checkout.yml #워크플로우 YAML 내용 출력
+      - run : ls -al our-source
+      #- run: cat .github/workflows/checkout.yml #워크플로우 YAML 내용 출력
